@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class update extends Model
 {
-    use HasFactory;
+    protected $table = 'updates';
+    protected $primaryKey = 'id';
+    public $timestamps = false;
 }
